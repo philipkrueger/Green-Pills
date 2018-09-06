@@ -33,7 +33,7 @@ int gameState = 1;
 
 void setup() {
     
-   logFile = createWriter("log_"+year()+"."+month()+"."+day()+"_"+hour()+"."+minute()+"."+second()+".txt"); 
+  // logFile = createWriter("log_"+year()+"."+month()+"."+day()+"_"+hour()+"."+minute()+"."+second()+".txt"); 
 
   
   temp = "leer";
@@ -101,8 +101,8 @@ void draw() {
     
     //noLoop();
 
-    logFile.flush();
-    logFile.close();
+  //  logFile.flush();
+  //  logFile.close();
   }
   //println(temp+"|"+bestlist[10]+"|"+top10+"|"+placed+"|"+Player);
 }

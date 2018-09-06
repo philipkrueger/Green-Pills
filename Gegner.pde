@@ -17,7 +17,7 @@ void gegner(){
         Leben -= 1;
         background(255, 0, 0);
         v[i].z += vSize[i];
-        logFile.println("Leben verloren: "+frameCount+" Frames"); 
+      //  logFile.println("Leben verloren: "+frameCount+" Frames"); 
       }
 
       if (v[i].z>1000) {                       //Gegner zurück
