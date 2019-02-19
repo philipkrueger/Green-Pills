@@ -10,12 +10,19 @@ void bckgrnd(){
     
     
     background(cr,cg,cb);
+   // fill(cr,cg,cb);
+   // rect(0,0,-4502,10*width,10*height);
     
     if(gameState == 1){
       
+      fill(255);
+      blendMode(SCREEN);
+      background(cr,cg,cb,0);
+      textFont(f);
       textSize(32);
-      text(ceil(Points), 30, height-30);
-      text(Leben, width-50, height-30);
+      text(ceil(Points), 30, height-30, 0);
+      text(Leben, width-50, height-30, 0);
+      blendMode(NORMAL);
 
     }
     
@@ -30,6 +37,7 @@ void bckgrnd(){
     rotate(radians(r));
     r+=(Tempo/100);
     imageMode(CENTER);
+    blendMode(MULTIPLY);
     image(img,0,0,width*14,width*14);
     rotate(radians(0.5*r));
     translate(100,0,1);
@@ -41,6 +49,7 @@ void bckgrnd(){
     fill(0);
     //rect(0,0,2*width,2*height);
     ellipse(width,height,2*width,2*width);
+    blendMode(NORMAL);
     noFill();
     noStroke();
     popMatrix();

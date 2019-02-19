@@ -30,7 +30,7 @@ boolean top10 = false;
 int placed;
 int gameState = 1;
 
-
+PFont f;
 void setup() {
     
   // logFile = createWriter("log_"+year()+"."+month()+"."+day()+"_"+hour()+"."+minute()+"."+second()+".txt"); 
@@ -46,8 +46,8 @@ void setup() {
   z[0] = -50000;
   size (1200, 800, P3D);
 
-  
-  smooth();
+  f = createFont("Arial",20,true);
+  smooth(8);
 
 
   for (int n = 1; n<z.length; n++) {     //Welt Z Koordinaten
